@@ -1,0 +1,12 @@
+#ifndef DTPATCHER_GLOBAL_H
+#define DTPATCHER_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(DTPATCHER_LIBRARY)
+#  define DTPATCHERSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define DTPATCHERSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // DTPATCHER_GLOBAL_H
